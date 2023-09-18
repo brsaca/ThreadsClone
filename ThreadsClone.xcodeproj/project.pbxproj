@@ -166,8 +166,9 @@
 		4B357F122AB3A74500F3FBBD /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				4B357F142AB3A7C300F3FBBD /* LoginView.swift */,
-				4B736DD62AB8C98100A5FAAD /* RegistrationView.swift */,
+				4B736E0B2AB9132200A5FAAD /* Service */,
+				4B736E0C2AB9132800A5FAAD /* View */,
+				4B736E0D2AB9132D00A5FAAD /* ViewModel */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -310,6 +311,29 @@
 				4B736DFE2AB8E94A00A5FAAD /* EditProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4B736E0B2AB9132200A5FAAD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4B736E0C2AB9132800A5FAAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B357F142AB3A7C300F3FBBD /* LoginView.swift */,
+				4B736DD62AB8C98100A5FAAD /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B736E0D2AB9132D00A5FAAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
