@@ -28,34 +28,20 @@ struct RegistrationView: View {
             
             VStack {
                 TextField("Enter your email", text: $email)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
                 
                 SecureField("Enter your password", text: $password)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(ThreadsTextFieldModifiers())
+                    .keyboardType(.alphabet)
                 
                 TextField("Enter your fullname", text: $fullname)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.namePhonePad)
                 
                 TextField("Enter your username", text: $username)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.alphabet)
             }
             
