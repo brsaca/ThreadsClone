@@ -11,10 +11,7 @@ struct RegistrationView: View {
     /// Environment
     @Environment(\.dismiss) var dismiss
     /// Properties
-    @State private var email: String = String()
-    @State private var password: String = String()
-    @State private var fullname: String = String()
-    @State private var username: String = String()
+    @State var viewModel = RegistrationViewModel()
     
     var body: some View {
         VStack {
@@ -27,26 +24,26 @@ struct RegistrationView: View {
                 .padding()
             
             VStack {
-                TextField("Enter your email", text: $email)
+                TextField("Enter your email", text: $viewModel.email)
                     .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.emailAddress)
                     .autocapitalization(.none)
                 
-                SecureField("Enter your password", text: $password)
+                SecureField("Enter your password", text: $viewModel.password)
                     .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.alphabet)
                 
-                TextField("Enter your fullname", text: $fullname)
+                TextField("Enter your fullname", text: $viewModel.fullname)
                     .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.namePhonePad)
                 
-                TextField("Enter your username", text: $username)
+                TextField("Enter your username", text: $viewModel.username)
                     .modifier(ThreadsTextFieldModifiers())
                     .keyboardType(.alphabet)
             }
             
             Button {
-                
+                Task { try await viewModel.createUser() }
             } label: {
                 Text("Sign Up")
                     .font(.subheadline)
