@@ -8,8 +8,51 @@
 import SwiftUI
 
 struct ExploreView: View {
+    /// Properties
+    @State private var searchText: String = String()
+    
     var body: some View {
-        Text("Explore")
+        NavigationStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach( 0 ... 10, id:\.self){ user in
+                        VStack {
+                            HStack {
+                                Image("bren")
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                                
+                                VStack(alignment: .leading) {
+                                    Text("brsaca")
+                                        .fontWeight(.semibold)
+                                    
+                                    Text("Brenda SC")
+                                }
+                                .font(.footnote)
+                                
+                                Spacer()
+                                
+                                Text("Folow")
+                                    .font(.subheadline)
+                                    .fontWeight(.semibold)
+                                    .frame(width: 100, height: 32)
+                                    .overlay {
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color(.systemGray4), lineWidth: 1)
+                                    }
+                            }
+                            .padding(.horizontal)
+                            
+                            Divider()
+                        }
+                        .padding(.vertical, 4)
+                    }
+                }
+            }
+            .navigationTitle("Search")
+            .searchable(text: $searchText)
+        }
     }
 }
 
