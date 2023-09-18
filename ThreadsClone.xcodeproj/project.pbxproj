@@ -21,6 +21,7 @@
 		4B736DED2AB8D10A00A5FAAD /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B736DEC2AB8D10A00A5FAAD /* ActivityView.swift */; };
 		4B736DF12AB8D12900A5FAAD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B736DF02AB8D12900A5FAAD /* ProfileView.swift */; };
 		4B736DF32AB8D2A200A5FAAD /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B736DF22AB8D2A200A5FAAD /* ThreadCell.swift */; };
+		4B736DF62AB8DEB700A5FAAD /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B736DF52AB8DEB700A5FAAD /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4B736DEC2AB8D10A00A5FAAD /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		4B736DF02AB8D12900A5FAAD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4B736DF22AB8D2A200A5FAAD /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
+		4B736DF52AB8DEB700A5FAAD /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				4B736DEA2AB8D0FA00A5FAAD /* Activity */,
 				4B357F122AB3A74500F3FBBD /* Authentication */,
+				4B736DF42AB8DE7900A5FAAD /* Components */,
 				4B736DE22AB8D07700A5FAAD /* Explore */,
 				4B736DDE2AB8D01200A5FAAD /* Feed */,
 				4B736DEE2AB8D11A00A5FAAD /* Profile */,
@@ -257,6 +260,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4B736DF42AB8DE7900A5FAAD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B736DF52AB8DEB700A5FAAD /* CircularProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,6 +343,7 @@
 				4B357F002AB3929400F3FBBD /* ContentView.swift in Sources */,
 				4B736DF32AB8D2A200A5FAAD /* ThreadCell.swift in Sources */,
 				4B736DED2AB8D10A00A5FAAD /* ActivityView.swift in Sources */,
+				4B736DF62AB8DEB700A5FAAD /* CircularProfileImageView.swift in Sources */,
 				4B736DE92AB8D0CF00A5FAAD /* CreateThreadView.swift in Sources */,
 				4B736DDD2AB8CDCE00A5FAAD /* ThreadsTabView.swift in Sources */,
 				4B736DDA2AB8CB8600A5FAAD /* ThreadsTextFieldModifiers.swift in Sources */,

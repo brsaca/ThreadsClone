@@ -18,10 +18,7 @@ struct ExploreView: View {
                     ForEach( 0 ... 10, id:\.self){ user in
                         VStack {
                             HStack {
-                                Image("bren")
-                                    .resizable()
-                                    .frame(width: 40, height: 40)
-                                    .clipShape(Circle())
+                                CircularProfileImageView()
                                 
                                 VStack(alignment: .leading) {
                                     Text("brsaca")
