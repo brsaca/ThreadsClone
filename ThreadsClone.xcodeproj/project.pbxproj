@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B0DB8C52AB921EF007971B5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DB8C42AB921EF007971B5 /* ContentViewModel.swift */; };
+		4B35723C2ABA12BF007E1B47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B35723B2ABA12BF007E1B47 /* User.swift */; };
 		4B357EFE2AB3929400F3FBBD /* ThreadsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B357EFD2AB3929400F3FBBD /* ThreadsCloneApp.swift */; };
 		4B357F002AB3929400F3FBBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B357EFF2AB3929400F3FBBD /* ContentView.swift */; };
 		4B357F022AB3929600F3FBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B357F012AB3929600F3FBBD /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		4B0DB8C42AB921EF007971B5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4B35723B2ABA12BF007E1B47 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4B357EFA2AB3929400F3FBBD /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B357EFD2AB3929400F3FBBD /* ThreadsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsCloneApp.swift; sourceTree = "<group>"; };
 		4B357EFF2AB3929400F3FBBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		4B357F0D2AB3A6D200F3FBBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B35723B2ABA12BF007E1B47 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				4B736DE52AB8D09000A5FAAD /* ExploreView.swift in Sources */,
 				4B736DF12AB8D12900A5FAAD /* ProfileView.swift in Sources */,
 				4B736DD72AB8C98100A5FAAD /* RegistrationView.swift in Sources */,
+				4B35723C2ABA12BF007E1B47 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
