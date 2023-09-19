@@ -36,6 +36,8 @@
 		4B736E0A2AB9102E00A5FAAD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B736E092AB9102E00A5FAAD /* FirebaseStorage */; };
 		4B736E0F2AB913B300A5FAAD /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B736E0E2AB913B300A5FAAD /* RegistrationViewModel.swift */; };
 		4B736E112AB914B900A5FAAD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B736E102AB914B900A5FAAD /* AuthService.swift */; };
+		4B750D532ABA613D009925A6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B750D522ABA613D009925A6 /* ExploreViewModel.swift */; };
+		4B750D552ABA6557009925A6 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B750D542ABA6557009925A6 /* PreviewProvider.swift */; };
 		4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		4B736E002AB90ECC00A5FAAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B736E0E2AB913B300A5FAAD /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4B736E102AB914B900A5FAAD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4B750D522ABA613D009925A6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		4B750D542ABA6557009925A6 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,7 @@
 		4B357F0E2AB3A6D400F3FBBD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4B750D542ABA6557009925A6 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				4B736DE32AB8D07E00A5FAAD /* View */,
+				4B750D512ABA6127009925A6 /* ViewModel */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -381,6 +387,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4B750D512ABA6127009925A6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B750D522ABA613D009925A6 /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -465,6 +479,7 @@
 				4B736E0F2AB913B300A5FAAD /* RegistrationViewModel.swift in Sources */,
 				4B357F152AB3A7C300F3FBBD /* LoginView.swift in Sources */,
 				4B736E112AB914B900A5FAAD /* AuthService.swift in Sources */,
+				4B750D552ABA6557009925A6 /* PreviewProvider.swift in Sources */,
 				4B736DFF2AB8E94A00A5FAAD /* EditProfileView.swift in Sources */,
 				4B357F002AB3929400F3FBBD /* ContentView.swift in Sources */,
 				4B6972072ABA1E1900266B1F /* UserService.swift in Sources */,
@@ -473,6 +488,7 @@
 				4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */,
 				4B736DF62AB8DEB700A5FAAD /* CircularProfileImageView.swift in Sources */,
 				4B736DF82AB8DF5F00A5FAAD /* UserCell.swift in Sources */,
+				4B750D532ABA613D009925A6 /* ExploreViewModel.swift in Sources */,
 				4B736DE92AB8D0CF00A5FAAD /* CreateThreadView.swift in Sources */,
 				4B736DFB2AB8E50B00A5FAAD /* ProfileThreadFilter.swift in Sources */,
 				4B0DB8C52AB921EF007971B5 /* ContentViewModel.swift in Sources */,
