@@ -18,6 +18,10 @@ struct ProfileView: View {
         return UIScreen.main.bounds.width / count - 16
     }
     
+    private var currentUser: User? {
+        return viewModel.currentUser
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
@@ -27,16 +31,18 @@ struct ProfileView: View {
                         VStack(alignment: .leading, spacing: 12){
                             /// fullname and username
                             VStack(alignment: .leading, spacing: 4){
-                                Text("Brenda Saavedra")
+                                Text(currentUser?.fullname ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                 
-                                Text("brsaca")
+                                Text(currentUser?.username ?? "")
                                     .font(.subheadline)
                             }
                             
-                            Text("iOS Developer")
-                                .font(.footnote)
+                            if let bio = currentUser?.bio {
+                                Text(bio)
+                                    .font(.footnote)
+                            }
                             
                             Text("2 followers")
                                 .font(.caption)
@@ -112,8 +118,8 @@ struct ProfileView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
+struct ProfileView_Previews: PreviewProvider {
+    static var previews: some View {
         ProfileView()
     }
 }

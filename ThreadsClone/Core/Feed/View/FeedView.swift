@@ -37,8 +37,10 @@ struct FeedView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        FeedView()
+struct FeedView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            FeedView()
+        }
     }
 }

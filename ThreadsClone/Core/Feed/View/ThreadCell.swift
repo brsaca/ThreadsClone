@@ -73,6 +73,8 @@ struct ThreadCell: View {
     }
 }
 
-#Preview {
-    ThreadCell()
+struct ThreadCell_Previews: PreviewProvider {
+    static var previews: some View {
+        ThreadCell()
+    }
 }

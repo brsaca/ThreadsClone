@@ -52,7 +52,7 @@ struct ThreadsTabView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
         }
-        .onChange(of: selectedTab, { oldValue, newValue in
+        .onChange(of: selectedTab, perform: { newValue in
             showCreateThreadView = selectedTab == 2
         })
         .sheet(isPresented: $showCreateThreadView, onDismiss: {
@@ -64,6 +64,8 @@ struct ThreadsTabView: View {
     }
 }
 
-#Preview {
-    ThreadsTabView()
+struct ThreadsTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        ThreadsTabView()
+    }
 }

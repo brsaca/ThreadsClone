@@ -31,6 +31,8 @@ struct ExploreView: View {
     }
 }
 
-#Preview {
-    ExploreView()
+struct ExploreView_Previews: PreviewProvider {
+    static var previews: some View {
+        ExploreView()
+    }
 }

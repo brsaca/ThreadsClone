@@ -70,6 +70,8 @@ struct CreateThreadView: View {
     }
 }
 
-#Preview {
-    CreateThreadView()
+struct CreateThreadView_Previews: PreviewProvider {
+    static var previews: some View {
+        CreateThreadView()
+    }
 }
