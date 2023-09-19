@@ -20,6 +20,7 @@ class ContentViewModel: ObservableObject {
     private func setupSubscribers() {
         AuthService.shared.$userSession.sink{ [weak self] userSession in
             self?.userSession = userSession
+            print("DEBUG: userSession in ContentViewModel from combine is \(String(describing: userSession))")
         }.store(in: &cancellables)
     }
 }

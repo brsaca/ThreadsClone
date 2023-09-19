@@ -11,7 +11,7 @@ struct RegistrationView: View {
     /// Environment
     @Environment(\.dismiss) var dismiss
     /// Properties
-    @State var viewModel = RegistrationViewModel()
+    @StateObject var viewModel = RegistrationViewModel()
     
     var body: some View {
         VStack {
@@ -31,15 +31,13 @@ struct RegistrationView: View {
                 
                 SecureField("Enter your password", text: $viewModel.password)
                     .modifier(ThreadsTextFieldModifiers())
-                    .keyboardType(.alphabet)
                 
                 TextField("Enter your fullname", text: $viewModel.fullname)
                     .modifier(ThreadsTextFieldModifiers())
-                    .keyboardType(.namePhonePad)
                 
                 TextField("Enter your username", text: $viewModel.username)
                     .modifier(ThreadsTextFieldModifiers())
-                    .keyboardType(.alphabet)
+                    .autocapitalization(.none)
             }
             
             Button {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     /// Properties
-    @State private var viewModel = ContentViewModel()
+    @StateObject private var viewModel = ContentViewModel()
     
     var body: some View {
         Group {

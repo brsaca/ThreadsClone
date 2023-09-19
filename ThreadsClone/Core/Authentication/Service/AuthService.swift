@@ -26,8 +26,9 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            print("DEBUG: AuthService login user: \(result.user)")
         } catch {
-            print("DEBUG: Failed to login with error: \(error.localizedDescription)")
+            print("DEBUG: AuthService Failed to login with error: \(error.localizedDescription)")
         }
     }
     
@@ -43,7 +44,7 @@ class AuthService {
             self.userSession = result.user
             try await uploadUserData(withEmail: email, fullname: fullname, username: username, id: result.user.uid)
         } catch {
-            print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
+            print("DEBUG: AuthService Failed to create user with error: \(error.localizedDescription)")
         }
     }
     
