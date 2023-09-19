@@ -19,7 +19,12 @@ class AuthService {
     
     @MainActor
     func login(withEmail email:String, password: String) async throws {
-        
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            print("DEBUG: Login user \(result.user.uid)")
+        } catch {
+            print("DEBUG: Failed to login with error: \(error.localizedDescription)")
+        }
     }
     
     @MainActor
@@ -30,5 +35,12 @@ class AuthService {
         } catch {
             print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
         }
+    }
+    
+    func signOut() {
+        /// signs out on backend
+        try? Auth.auth().signOut()
+        /// removes session locally and updates routing
+        self.userSession = nil
     }
 }
