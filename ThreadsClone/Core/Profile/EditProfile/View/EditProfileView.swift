@@ -10,11 +10,8 @@ import PhotosUI
 
 struct EditProfileView: View {
     /// Properties
-    @State private var bio: String = String()
-    @State private var link: String = String()
-    @State private var isPrivateProfile = false
+    @StateObject private var viewModel = EditProfileViewModel()
     @Environment (\.dismiss) var dismiss
-    @EnvironmentObject var viewModel: CurrentUserProfileViewModel
     
     var body: some View {
         NavigationStack {
@@ -54,7 +51,7 @@ struct EditProfileView: View {
                         Text("Bio")
                             .fontWeight(.semibold)
                         
-                        TextField("Enter your bio...", text: $bio, axis: .vertical)
+                        TextField("Enter your bio...", text: $viewModel.bio, axis: .vertical)
                     }
                     
                     Divider()
@@ -64,13 +61,13 @@ struct EditProfileView: View {
                         Text("Link")
                             .fontWeight(.semibold)
                         
-                        TextField("Add link...", text: $link)
+                        TextField("Add link...", text: $viewModel.link)
                     }
                     
                     Divider()
                     
                     /// private profile
-                    Toggle("Private profile", isOn: $isPrivateProfile)
+                    Toggle("Private profile", isOn: $viewModel.isPrivateProfile)
                 }
                 .font(.footnote)
                 .padding()

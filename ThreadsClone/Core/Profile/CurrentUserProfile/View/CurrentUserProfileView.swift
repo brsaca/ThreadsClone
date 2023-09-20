@@ -45,7 +45,6 @@ struct CurrentUserProfileView: View {
             }
             .sheet(isPresented: $showEditProfile, content: {
                 EditProfileView()
-                    .environmentObject(viewModel)
             })
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
