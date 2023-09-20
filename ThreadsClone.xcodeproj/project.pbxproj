@@ -44,6 +44,9 @@
 		4B7A35332ABB72B100669E81 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A35322ABB72B100669E81 /* EditProfileViewModel.swift */; };
 		4B7A35352ABB789D00669E81 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A35342ABB789D00669E81 /* ImageUploader.swift */; };
 		4B7A35382ABB7F1600669E81 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7A35372ABB7F1600669E81 /* Kingfisher */; };
+		4B7A353A2ABB8BA100669E81 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A35392ABB8BA100669E81 /* Thread.swift */; };
+		4B7A353D2ABB8CBB00669E81 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A353C2ABB8CBB00669E81 /* CreateThreadViewModel.swift */; };
+		4B7A353F2ABB8CE900669E81 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A353E2ABB8CE900669E81 /* ThreadService.swift */; };
 		4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,9 @@
 		4B7A352F2ABB575C00669E81 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
 		4B7A35322ABB72B100669E81 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		4B7A35342ABB789D00669E81 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		4B7A35392ABB8BA100669E81 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		4B7A353C2ABB8CBB00669E81 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		4B7A353E2ABB8CE900669E81 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +167,7 @@
 			children = (
 				4B6972062ABA1E1900266B1F /* UserService.swift */,
 				4B7A35342ABB789D00669E81 /* ImageUploader.swift */,
+				4B7A353E2ABB8CE900669E81 /* ThreadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				4B35723B2ABA12BF007E1B47 /* User.swift */,
+				4B7A35392ABB8BA100669E81 /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				4B736DE72AB8D0B800A5FAAD /* View */,
+				4B7A353B2ABB8C7700669E81 /* ViewModel */,
 			);
 			path = ThreadCreation;
 			sourceTree = "<group>";
@@ -444,6 +453,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4B7A353B2ABB8C7700669E81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A353C2ABB8CBB00669E81 /* CreateThreadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B736DE12AB8D02E00A5FAAD /* FeedView.swift in Sources */,
+				4B7A353A2ABB8BA100669E81 /* Thread.swift in Sources */,
 				4B736E0F2AB913B300A5FAAD /* RegistrationViewModel.swift in Sources */,
 				4B357F152AB3A7C300F3FBBD /* LoginView.swift in Sources */,
 				4B736E112AB914B900A5FAAD /* AuthService.swift in Sources */,
@@ -539,6 +557,7 @@
 				4B7A35302ABB575C00669E81 /* UserContentListView.swift in Sources */,
 				4B736DED2AB8D10A00A5FAAD /* ActivityView.swift in Sources */,
 				4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */,
+				4B7A353D2ABB8CBB00669E81 /* CreateThreadViewModel.swift in Sources */,
 				4B736DF62AB8DEB700A5FAAD /* CircularProfileImageView.swift in Sources */,
 				4B736DF82AB8DF5F00A5FAAD /* UserCell.swift in Sources */,
 				4B750D532ABA613D009925A6 /* ExploreViewModel.swift in Sources */,
@@ -556,6 +575,7 @@
 				4B736DF12AB8D12900A5FAAD /* ProfileView.swift in Sources */,
 				4B736DD72AB8C98100A5FAAD /* RegistrationView.swift in Sources */,
 				4B35723C2ABA12BF007E1B47 /* User.swift in Sources */,
+				4B7A353F2ABB8CE900669E81 /* ThreadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
