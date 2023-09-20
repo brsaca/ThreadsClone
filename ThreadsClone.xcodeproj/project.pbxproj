@@ -39,6 +39,8 @@
 		4B750D532ABA613D009925A6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B750D522ABA613D009925A6 /* ExploreViewModel.swift */; };
 		4B750D552ABA6557009925A6 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B750D542ABA6557009925A6 /* PreviewProvider.swift */; };
 		4B7A352A2ABB530E00669E81 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A35292ABB530E00669E81 /* CurrentUserProfileView.swift */; };
+		4B7A352E2ABB55EE00669E81 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A352D2ABB55EE00669E81 /* ProfileHeaderView.swift */; };
+		4B7A35302ABB575C00669E81 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A352F2ABB575C00669E81 /* UserContentListView.swift */; };
 		4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		4B750D522ABA613D009925A6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		4B750D542ABA6557009925A6 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		4B7A35292ABB530E00669E81 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		4B7A352D2ABB55EE00669E81 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		4B7A352F2ABB575C00669E81 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
 		4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,13 +225,6 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		4B6972082ABA1F4F00266B1F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		4B736DD82AB8CB6A00A5FAAD /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,21 +310,21 @@
 		4B736DEE2AB8D11A00A5FAAD /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4B7A352C2ABB559300669E81 /* Components */,
 				4B750D562ABA6784009925A6 /* CurrentUserProfile */,
 				4B736DFC2AB8E93500A5FAAD /* EditProfile */,
 				4B736DF92AB8E4F000A5FAAD /* Model */,
-				4B736DEF2AB8D11F00A5FAAD /* View */,
-				4B6972082ABA1F4F00266B1F /* ViewModel */,
+				4B736DEF2AB8D11F00A5FAAD /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		4B736DEF2AB8D11F00A5FAAD /* View */ = {
+		4B736DEF2AB8D11F00A5FAAD /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
 				4B736DF02AB8D12900A5FAAD /* ProfileView.swift */,
 			);
-			path = View;
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		4B736DF42AB8DE7900A5FAAD /* Components */ = {
@@ -422,6 +419,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4B7A352C2ABB559300669E81 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A352D2ABB55EE00669E81 /* ProfileHeaderView.swift */,
+				4B7A352F2ABB575C00669E81 /* UserContentListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -511,6 +517,7 @@
 				4B357F002AB3929400F3FBBD /* ContentView.swift in Sources */,
 				4B6972072ABA1E1900266B1F /* UserService.swift in Sources */,
 				4B736DF32AB8D2A200A5FAAD /* ThreadCell.swift in Sources */,
+				4B7A35302ABB575C00669E81 /* UserContentListView.swift in Sources */,
 				4B736DED2AB8D10A00A5FAAD /* ActivityView.swift in Sources */,
 				4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */,
 				4B736DF62AB8DEB700A5FAAD /* CircularProfileImageView.swift in Sources */,
@@ -524,6 +531,7 @@
 				4B7A352A2ABB530E00669E81 /* CurrentUserProfileView.swift in Sources */,
 				4B736DDA2AB8CB8600A5FAAD /* ThreadsTextFieldModifiers.swift in Sources */,
 				4B357EFE2AB3929400F3FBBD /* ThreadsCloneApp.swift in Sources */,
+				4B7A352E2ABB55EE00669E81 /* ProfileHeaderView.swift in Sources */,
 				4B736DE52AB8D09000A5FAAD /* ExploreView.swift in Sources */,
 				4B736DF12AB8D12900A5FAAD /* ProfileView.swift in Sources */,
 				4B736DD72AB8C98100A5FAAD /* RegistrationView.swift in Sources */,
