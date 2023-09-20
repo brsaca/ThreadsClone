@@ -26,29 +26,41 @@ struct CurrentUserProfileView: View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 /// Bio and stats
-                ProfileHeaderView(user: currentUser)
-                
-                Button {
+                VStack(spacing: 20){
+                    ProfileHeaderView(user: currentUser)
                     
-                } label: {
-                    Text("Edit Profile")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.black)
-                        .frame(width: 352, height: 32)
-                        .background(.white)
-                        .cornerRadius(8)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color(.systemGray4), lineWidth: 1)
-                        }
+                    Button {
+                        
+                    } label: {
+                        Text("Edit Profile")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            .frame(width: 352, height: 32)
+                            .background(.white)
+                            .cornerRadius(8)
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color(.systemGray4), lineWidth: 1)
+                            }
+                    }
+                    
+                    /// user content list view
+                    UserContentListView()
                 }
-                
-                /// user content list view
-                UserContentListView()
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        AuthService.shared.signOut()
+                    } label: {
+                        Image(systemName:"line.3.horizontal")
+                    }
+                    .tint(.black)
+                }
+            }
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
     }
 }
 

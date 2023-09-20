@@ -33,16 +33,6 @@ struct ProfileView: View {
                 UserContentListView()
             }
         }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    AuthService.shared.signOut()
-                } label: {
-                    Image(systemName:"line.3.horizontal")
-                }
-                .tint(.black)
-            }
-        }
         .navigationBarTitleDisplayMode(.inline)
         .padding(.horizontal)
     }
