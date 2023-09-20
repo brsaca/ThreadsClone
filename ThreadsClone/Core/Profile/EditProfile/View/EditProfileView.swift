@@ -12,6 +12,7 @@ struct EditProfileView: View {
     @State private var bio: String = String()
     @State private var link: String = String()
     @State private var isPrivateProfile = false
+    @Environment (\.dismiss) var dismiss
     
     var body: some View {
         NavigationStack {
@@ -71,23 +72,23 @@ struct EditProfileView: View {
             }
             .navigationTitle("Edit Profile")
             .navigationBarTitleDisplayMode(.inline)
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button("Cancel") {
-                    
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Cancel") {
+                        dismiss()
+                    }
+                    .font(.subheadline)
+                    .tint(.black)
                 }
-                .font(.subheadline)
-                .tint(.black)
-            }
-            
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Done") {
-                    
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Done") {
+                        
+                    }
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .tint(.black)
                 }
-                .font(.subheadline)
-                .fontWeight(.semibold)
-                .tint(.black)
             }
         }
     }
