@@ -41,7 +41,7 @@ class UserService {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
         
         try await Firestore.firestore().collection("users").document(currentUid).updateData([
-            "profile_image":imageUrl
+            "profileImageUrl":imageUrl
         ])
         self.currentUser?.profileImageUrl = imageUrl
     }

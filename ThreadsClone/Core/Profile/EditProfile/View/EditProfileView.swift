@@ -10,6 +10,7 @@ import PhotosUI
 
 struct EditProfileView: View {
     /// Properties
+    let user: User
     @StateObject private var viewModel = EditProfileViewModel()
     @Environment (\.dismiss) var dismiss
     
@@ -26,7 +27,7 @@ struct EditProfileView: View {
                             Text("Name")
                                 .fontWeight(.semibold)
                             
-                            Text("Brenda Saavedra")
+                            Text(user.fullname)
                         }
                         
                         Spacer()
@@ -39,7 +40,7 @@ struct EditProfileView: View {
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
                             } else {
-                                CircularProfileImageView()
+                                CircularProfileImageView(user: user)
                             }
                         }
                     }
@@ -109,7 +110,7 @@ struct EditProfileView: View {
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            EditProfileView()
+            EditProfileView(user: dev.user)
         }
     }
 }
