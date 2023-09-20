@@ -42,6 +42,7 @@
 		4B7A352E2ABB55EE00669E81 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A352D2ABB55EE00669E81 /* ProfileHeaderView.swift */; };
 		4B7A35302ABB575C00669E81 /* UserContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A352F2ABB575C00669E81 /* UserContentListView.swift */; };
 		4B7A35332ABB72B100669E81 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A35322ABB72B100669E81 /* EditProfileViewModel.swift */; };
+		4B7A35352ABB789D00669E81 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A35342ABB789D00669E81 /* ImageUploader.swift */; };
 		4B811F9C2ABA086300389FC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		4B7A352D2ABB55EE00669E81 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		4B7A352F2ABB575C00669E81 /* UserContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentListView.swift; sourceTree = "<group>"; };
 		4B7A35322ABB72B100669E81 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		4B7A35342ABB789D00669E81 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		4B811F9B2ABA086300389FC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				4B6972062ABA1E1900266B1F /* UserService.swift */,
+				4B7A35342ABB789D00669E81 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				4B736DF82AB8DF5F00A5FAAD /* UserCell.swift in Sources */,
 				4B750D532ABA613D009925A6 /* ExploreViewModel.swift in Sources */,
 				4B736DE92AB8D0CF00A5FAAD /* CreateThreadView.swift in Sources */,
+				4B7A35352ABB789D00669E81 /* ImageUploader.swift in Sources */,
 				4B736DFB2AB8E50B00A5FAAD /* ProfileThreadFilter.swift in Sources */,
 				4B0DB8C52AB921EF007971B5 /* ContentViewModel.swift in Sources */,
 				4B69720A2ABA1F6000266B1F /* CurrentUserProfileViewModel.swift in Sources */,
