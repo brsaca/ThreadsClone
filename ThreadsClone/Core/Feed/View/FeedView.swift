@@ -22,7 +22,11 @@ struct FeedView: View {
                 }
             }
             .refreshable {
-                print("DEBUG: Refresh threads")
+                do {
+                    // Sleep for 2 seconds
+                    try await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+                    Task{ try await viewModel.fetchThreads() }
+                } catch {}
             }
             .navigationTitle("Threads")
             .navigationBarTitleDisplayMode(.inline)
