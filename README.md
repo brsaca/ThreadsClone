@@ -1,6 +1,6 @@
 # ThreadsClone - SwiftUI with Firebase 👋
 
-A clone app for Threads using swiftUI and firebase [SwiftUI Threads Clone | iOS 17 | async/await | Firebase | 2023]([https://www.youtube.com/watch?v=r61KA8Gzw0M](https://www.youtube.com/watch?v=MfwdchNNW78))
+A clone app for Threads using swiftUI and firebase [SwiftUI Threads Clone | iOS 17 | async/await | Firebase | 2023](https://www.youtube.com/watch?v=MfwdchNNW78)
 <p align="center">
 <a href="#">
 <img src="images/threads.gif" align="center" width=35%> 
